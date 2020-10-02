@@ -179,13 +179,13 @@ public class Rob {
     }
 
     private void place_robot(String[][] grid, int rob_num1, int rob_num2) {
-        grid[rob_num1][rob_num2] = "[O]";
+/*        grid[rob_num1][rob_num2] = "[O]";
          // Just to see if the bot is placed correct
         for (String[] row : grid) {
             for (String col : row) {
                 System.out.print(col);
             }
             System.out.println();
-        }
+        }*/
     }
 }
