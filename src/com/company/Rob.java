@@ -129,15 +129,27 @@ public class Rob {
                 switch (rob_dir) {
                     case "N":
                         rob_num1 = rob_num1 - 1;
+                        if (rob_num1 >= 0 || rob_num1 < num1 || rob_num1 <= num2){
+                            rob_num1 = rob_num1 + 1;
+                        }
                         break;
                     case "E":
                         rob_num2 = rob_num2 + 1;
+                        if (rob_num2 >= 0 || rob_num2 < num1 || rob_num2 <= num2){
+                            rob_num2 = rob_num2 - 1;
+                        }
                         break;
                     case "S":
                         rob_num1 = rob_num1 + 1;
+                        if (rob_num1 >= 0 || rob_num1 < num1 || rob_num1 <= num2){
+                            rob_num1 = rob_num1 - 1;
+                        }
                         break;
                     case "W":
                         rob_num2 = rob_num2 - 1;
+                        if (rob_num2 >= 0 || rob_num2 < num1 || rob_num2 <= num2){
+                            rob_num2 = rob_num2 + 1;
+                        }
                         break;
                 }
             }
